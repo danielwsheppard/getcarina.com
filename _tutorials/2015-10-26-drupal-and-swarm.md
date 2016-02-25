@@ -32,7 +32,7 @@ This tutorial provides steps for running a Drupal instance and a MySQL database 
 
 1. Create an overlay network. This virtual network will privately encapsulate your containers for security.
 
-    `docker network create --driver overlay --subnet=10.0.9.0/24 mynetwork`
+    `docker network create mynetwork`
 
 1. Create a MySQL container in which to store data for the Drupal container. MySQL installation will takes about 10 seconds after the Docker script returns. You need to set the following container environment variables:
   * `MYSQL_USER` is the username to use for the Drupal installation.
